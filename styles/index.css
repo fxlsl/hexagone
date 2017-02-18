@@ -1362,7 +1362,6 @@ h2, h3 {
         height: 100%;
         transition: all 1s ease; }
         .wrap .home .banner .ban li {
-          border: 1px solid #e8e8e8;
           float: left;
           height: 100%;
           width: 700px;
