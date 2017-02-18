@@ -1348,7 +1348,31 @@ h2, h3 {
       font-size: 16px; }
     .wrap .home .banner {
       padding: 20px 0;
-      height: 180px; }
+      height: 180px;
+      position: relative;
+      left: 0;
+      top: 0;
+      overflow: hidden; }
+      .wrap .home .banner .ban {
+        width: 1000%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        transition: all 1s ease .2s; }
+        .wrap .home .banner .ban li {
+          border: 1px solid #e8e8e8;
+          float: left;
+          height: 100%;
+          width: 700px;
+          box-sizing: border-box; }
+          .wrap .home .banner .ban li a {
+            display: block;
+            height: 100%;
+            background: #555; }
+    .wrap .home .con {
+      line-height: 2em; }
   .wrap .pro {
     padding: 20px 0 0;
     border-bottom: 1px solid #eee; }
@@ -1382,6 +1406,8 @@ h2, h3 {
         margin-bottom: 20px; }
         .wrap .work .list a img {
           width: 100%; }
+    .wrap .work p {
+      line-height: 2em; }
   .wrap .test h2 {
     height: 50px;
     line-height: 50px; }

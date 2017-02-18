@@ -44,6 +44,34 @@
 		.banner{
 			padding: 20px 0;
 			height: 180px;
+			position: relative;
+			left: 0;
+			top: 0;
+			overflow: hidden;
+			.ban{
+				width: 1000%;
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				height: 100%;
+				transition: all 1s ease .2s;
+				li{
+					border: 1px solid #e8e8e8;
+					float: left;
+					height: 100%;
+					width: 700px;
+					box-sizing: border-box;
+					a{
+						display: block;
+						height: 100%;
+						background: #555;
+					}
+				}
+			}
+		}
+		.con{
+			line-height: 2em;
 		}
 	}
 	.pro{
@@ -88,6 +116,9 @@
 				}
 				margin-bottom: 20px;
 			}
+		}
+		p{
+			line-height: 2em;
 		}
 	}
 
