@@ -9,7 +9,7 @@ $(function(){
 		if(n<0){
 			n=len-1;
 			dis=(n-1)*w;
-		}else if(n>=len){
+		}else if(n>len-1){
 			n=0;
 			dis=0;
 		}else{
