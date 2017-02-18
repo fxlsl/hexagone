@@ -1,0 +1,185 @@
+@import 'base'; // 引用初始化样式
+@import 'conmon'; // 引用公共样式
+@import 'function'; // 引用方法
+@import 'fonts';
+.head{
+	display: flex;
+	// flex-direction: row;
+	// flex-wrap: nowrap;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	background: #344a61;
+	color: #fff;
+	height: 100%;
+	.menu{
+		width: 60px;
+		height: 100%;
+	}
+	.menul{
+		border-right: 1px solid #eee;
+		text-align: center;
+	}
+	.menur{
+		border-left: 1px solid #eee;
+		text-align: center;
+	}
+}
+
+.wrap{
+	padding: 0 20px;
+	$bb: 1px solid #eee;
+	.home{
+		border-bottom: $bb;
+		padding :{
+			bottom: 10px;
+		}
+		h3{
+			height: 40px;
+			line-height: 40px;
+			border-bottom: $bb;
+			color: #b0b0b0;
+			font-size: 16px;
+		}
+		.banner{
+			padding: 20px 0;
+			height: 180px;
+		}
+	}
+	.pro{
+		padding: 20px 0 0;
+		border-bottom: $bb;
+		.item{
+			display: flex;
+			line-height: 20px;
+			font-size: 16px;
+			height: 100px;
+			overflow: hidden;
+			img{
+				width: 80px;
+			}
+			div:nth-child(2){
+				flex: 1;
+				padding-left: 20px;
+				h3{
+					font-weight: 900;
+					line-height: 1.5em
+				}
+				p{
+					font-size: 12px;
+					line-height: 2em;
+				}
+			}
+		}
+	}
+
+	.work{
+		border-bottom: $bb;
+		.list{
+			display: flex;
+			padding-top: 20px;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-content: space-between;
+			a{
+				width: 30%;
+				img{
+					width: 100%;
+				}
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.test{
+		h2{
+			height: 50px;
+			line-height: 50px;
+		}
+		.detail{
+			line-height: 20px;
+		}
+		.user{
+			display: flex;
+			padding: 20px 0;
+			border-bottom: $bb;
+			.userl{
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+				background: #29d16f url('../images/user.png') no-repeat center;
+				background: {
+					size: 45px 45px;
+				}
+				box-shadow: 0 2px 0 0;
+			}
+			.userr{
+				flex: 1;
+				padding-left: 20px;
+				p{
+					line-height: 20px;
+					&:last-child{
+						text-align: right;
+						font-weight: 700;
+					}
+				}
+			}
+		}
+	}
+
+	.get{
+		text-align: center;
+		border-bottom: $bb;
+		h2{
+			height: 50px;
+			line-height: 50px;
+		}
+		p{
+			line-height: 20px;
+		}
+		.glist{
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-around;
+			padding: 20px 0;
+			a{
+				display: inline-flex;
+				width: 50px;
+				height: 50px;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+
+	.copy{
+		text-align: center;
+		color: #929292;
+		padding: 20px 0;
+		line-height: 20px;
+	}
+}
+
+.footer{
+	padding-top: 10px;
+	background: #000;
+	text-align: center;
+	color: #fff;
+	width: 100vw;
+	margin-left: -20px;
+	div{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-around;
+		a{
+			width: 20px;
+			height: 20px;
+			background: #fff;
+		}
+	}
+	p{
+		line-height: 50px;
+	}
+}
